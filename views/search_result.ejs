@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>producten</title>
+  <!--link rel='stylesheet' href='stylesheets/bootstrap.min.css'-->
+</head>
+
+<body>
+  <h2>Gevonden product(en):</h2>
+  <br /><br />
+  <ul>
+    <% producten.forEach(function(product) {%>
+    <li>
+      <span><b>naam : </b><%= product.naam %></span><br />
+      <span><b>smaak : </b><%= product.smaak %></span><br />
+      <span><b>kleur : </b><%= product.kleur %></span><br />
+      <span><b>vorm : </b><%= product.vorm %></span><br />
+      <span><b>vervaldatum : </b><%= product.vervaldatum %></span><br />
+    </li>
+    <% }) %>
+  </ul>
+</body>
+
+</html>

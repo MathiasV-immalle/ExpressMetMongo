@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>producten</title>
+  <!--link rel='stylesheet' href='stylesheets/bootstrap.min.css'-->
+</head>
+<body>
+<div>
+  <h2>Voeg product toe</h2>
+  <br/><br/>
+  <form action='/product/add' method='POST'>
+   <table>
+     <tr><td>naam : </td><td><input type='text' name='naam'></td></tr>
+     <tr><td>smaak : </td><td><input type='text' name='smaak'></td></tr>
+     <tr><td>kleur : </td><td><input type='text' name='kleur'></td></tr>
+     <tr><td>vorm : </td><td><input type='text' name='vorm'></td></tr>
+     <tr><td><button type='submit'>Add</button></td></tr>
+   </table>
+  </form>
+</div>
+</body>
+</html>
